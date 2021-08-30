@@ -1,0 +1,409 @@
+/* general style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Klee One", cursive;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+video {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: #07013780;
+    z-index: 1;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 3;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+video {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: #07013780;
+    z-index: 1;
+}
+/* coming soon section */
+.coming-soon {
+    position: relative;
+    width: 100%;
+    padding-bottom: 200px;
+}
+.coming-soon .container {
+    color: white;
+    height: 100%;
+}
+.coming-soon .container .header .skyline {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #ffffff33;
+    width: 170px;
+    height: 180px;
+}
+.coming-soon .container .header .skyline .square {
+    width: 70px;
+    height: 80px;
+    border: 1px white solid;
+    border-right: none;
+    position: absolute;
+    top: 65px;
+    left: 14px;
+}
+.coming-soon .container .header .skyline .square::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: white;
+    right: 0;
+    top: 0;
+}
+.coming-soon .container .header .skyline .square::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+}
+.coming-soon .container .header .skyline h1 {
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0 auto;
+    width: fit-content;
+    transform: translateY(83px);
+    -webkit-transform: translateY(83px);
+    -moz-transform: translateY(83px);
+    -ms-transform: translateY(83px);
+    -o-transform: translateY(83px);
+}
+.coming-soon .container .header nav ul {
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.coming-soon .container .header nav ul li a {
+    margin-left: 30px;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.coming-soon .container .clock {
+    position: relative;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.coming-soon .container .clock span {
+    position: absolute;
+    z-index: 3;
+    width: 2px;
+    height: 60px;
+    background-color: white;
+}
+.coming-soon .container .clock .hour {
+    height: 230px;
+    top: 35px;
+    left: 38%;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+.coming-soon .container .clock .second {
+    height: 170px;
+    top: 41.5%;
+    left: 35%;
+    transform: rotate(-120deg);
+    -webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+}
+.coming-soon .container .clock .one {
+    top: -60px;
+    left: 50%;
+}
+.coming-soon .container .clock .two {
+    top: -20px;
+    right: 21%;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+.coming-soon .container .clock .three {
+    top: 17%;
+    right: 1%;
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+.coming-soon .container .clock .four {
+    top: 45%;
+    right: -6%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.coming-soon .container .clock .five {
+    top: 72%;
+    right: 1%;
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+}
+.coming-soon .container .clock .six {
+    top: 93%;
+    right: 22%;
+    transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    -o-transform: rotate(150deg);
+}
+.coming-soon .container .clock .seven {
+    bottom: -60px;
+    left: 50%;
+}
+.coming-soon .container .clock .eight {
+    top: 93%;
+    left: 22%;
+    transform: rotate(-150deg);
+    -webkit-transform: rotate(-150deg);
+    -moz-transform: rotate(-150deg);
+    -ms-transform: rotate(-150deg);
+    -o-transform: rotate(-150deg);
+}
+.coming-soon .container .clock .nine {
+    top: 72%;
+    left: 1%;
+    transform: rotate(-120deg);
+    -webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+}
+.coming-soon .container .clock .ten {
+    top: 45%;
+    left: -6%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.coming-soon .container .clock .eleven {
+    top: 17%;
+    left: 1%;
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+}
+.coming-soon .container .clock .twelve {
+    top: -20px;
+    left: 21%;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+.coming-soon .container .clock .text {
+    position: relative;
+    z-index: 5;
+}
+.coming-soon .container .clock .text p {
+    text-align: center;
+    font-size: 18px;
+}
+.coming-soon .container .clock .text h2 {
+    font-size: 80px;
+    padding: 50px 0;
+    text-align: center;
+}
+.coming-soon .container .scroll-down {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    position: absolute;
+    top: 500px;
+    right: 0;
+}
+.coming-soon .container .scroll-down:hover {
+    background-color: white;
+    color: black;
+}
+/* about section */
+.about {
+    color: white;
+    position: relative;
+    width: 100%;
+}
+.about .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about .container .about-skyline h2 {
+    padding: 50px 0;
+    font-size: 40px;
+}
+.about .container .about-skyline p {
+    padding: 0 30px;
+    margin: 0 auto 70px;
+    line-height: 1.8;
+    font-size: 18px;
+    width: 70%;
+}
+.about .container .about-skyline h3 {
+    margin-bottom: 60px;
+    font-style: italic;
+    font-size: 22px;
+}
+.about .container .about-skyline form {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+.about .container .about-skyline form label {
+    display: block;
+    text-align: left;
+    width: 75%;
+    margin: 0 auto 15px;
+    font-size: 20px;
+}
+.about .container .about-skyline form div {
+    width: 100%;
+    margin: 0 auto;
+}
+.about .container .about-skyline form div input {
+    padding: 10px;
+    outline: none;
+    border: 3px #070135 solid;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.about .container .about-skyline form ::placeholder {
+    color: #070135;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.about .container .about-skyline form div input:first-child {
+    width: 55%;
+    color: #070135;
+}
+.about .container .about-skyline form div input:first-child:focus {
+    border-color: #c30000;
+}
+.about .container .about-skyline form div input:last-child {
+    width: 20%;
+    background-color: #070135;
+    color: white;
+}
+.about .container .about-skyline form div input:last-child:hover {
+    background-color: transparent;
+}
+.about .container .about-skyline .icons {
+    margin-top: 50px;
+    font-size: 20px;
+}
+.about .container .about-skyline .icons i {
+    padding: 0 10px;
+}
+.about .container .footer {
+    margin: 100px auto 50px;
+    font-size: 20px;
+    width: fit-content;
+}
+.about .container .footer .scroll-up {
+    color: white;
+    font-size: 20px;
+    padding: 20px 15px;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+.about .container .footer .scroll-up:hover {
+    background-color: white;
+    color: black;
+}
